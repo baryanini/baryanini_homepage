@@ -1,0 +1,154 @@
+
+@font-face {
+  font-family: 'amatic';
+  src: url('/fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: 'amatic';
+  src: url('/fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
+
+*{
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-family: amatic, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#whoami{
+  font-size: 35px;
+  max-width: 400px;
+}
+body{
+  background-color: #304059
+}
+h1{
+  font-size: 35px;
+  display: inline-block;
+}
+.container{
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-left{
+  display: flex;
+  min-width: 700px;
+  height: 400px;
+}
+
+.logo{
+  height: 100%;
+  border: 1px solid gold;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.header-right{
+}
+
+.medias-contacts-list{
+  display: flex;
+  margin:auto 10px;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.medias-item{
+  height: 100px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 60px;
+  margin-right: 15px;
+}
+.medias-contacts-heading{
+  font-size: 30px;
+}
+.medias-link{
+  color:gold;
+}
+.medias-item-telephone{
+  background-image: url('/img/medias/telephone.png');
+}
+.medias-item-vk{
+  background-image: url('/img/medias/vk.png');
+}
+
+.medias-item-instagram{
+  background-image: url('/img/medias/instagram.png');
+}
+
+.medias-item-github{
+  background-image: url('/img/medias/github.png');
+}
+
+.medias-item-telegram{
+  background-image: url('/img/medias/telegram.png');
+}
+
+.medias-item-steam{
+  background-image: url('/img/medias/steam.png');
+}
+
+.medias-item-discord{
+  background-image: url('/img/medias/discord.png');
+}
+.medias-item-mail{
+  background-image: url('/img/medias/mail.png');
+}
+.main{
+  text-align: center;
+}
+
+.workplace{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.workplace-child{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 300px;
+  margin-right: 20px;
+  border: 1px solid goldenrod;
+  box-shadow: 3px 2px 10px gold;
+}
+
+.workplace-child:not(:nth-child(3n)){
+  margin-right: 0;
+}
+
+.button{
+  color: black;
+  align-self: center;
+  margin: auto;
+}
