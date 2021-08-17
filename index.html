@@ -14,47 +14,47 @@
 <body id="body">
   <header class = "header-container container">
     <div class="header-left">
-      <img class = "logo" src="/img/me.jpg" alt="моё фото">
+      <img class = "logo" src="/img/me.jpg" alt="моё фото" width="200px" height="300px">
       <p id="whoami">Я Алексей Барьянов.<br> Мне 24 года. <br>Я начинающий разработчик. Изучаю HTML, CSS, JavaSript. Знаком с  Git и SQL. <br> Хочу найти своё место в IT.</p>
     </div>
     <div class="header-right">
       <ul class ="medias-contacts-list ">
         <li class="medias-contacts-item ">
           <strong class = "medias-contacts-heading">Телефон</strong>
-          <div class ="medias-item medias-item-telephone">
-            <a href="tel:+79634760229" class = "medias-link">
+          <div class ="medias-item ">
+            <a href="tel:+79634760229" class = "medias-link medias-link-telephone">
               +7-963-476-02-29
             </a>
           </div>
         </li>
         <li class="medias-contacts-item">
           <strong class = "medias-contacts-heading">Почта</strong>
-          <div class ="medias-item medias-item-mail">
-            <a href="mailto:baryanov21@mail.ru" class = "medias-link">baryanov21@mail.ru</a>
+          <div class ="medias-item ">
+            <a href="mailto:baryanov21@mail.ru" class = "medias-link medias-link-mail">baryanov21@mail.ru</a>
           </div>
         </li>
         <li class="medias-contacts-item">
           <strong class = "medias-contacts-heading">Instagram</strong>
-          <div class ="medias-item medias-item-instagram" >
-            <a href="https://www.instagram.com/baryanini/" class = "medias-link">baryanini</a>
+          <div class ="medias-item" >
+            <a href="https://www.instagram.com/baryanini/" class = "medias-link medias-link-instagram">baryanini</a>
           </div>
         </li>
         <li class="medias-contacts-item">
           <strong class = "medias-contacts-heading">Github</strong>
-          <div class ="medias-item medias-item-github" >
-            <a href="https://github.com/baryanini" class = "medias-link">baryanini</a>
+          <div class ="medias-item" >
+            <a href="https://github.com/baryanini" class = "medias-link medias-link-github">baryanini</a>
           </div>
         </li>
         <li class="medias-contacts-item">
           <strong class = "medias-contacts-heading">Discord</strong>
-          <div class ="medias-item medias-item-discord" >
-            <a href="https://discord.com/users/baryanini" class = "medias-link">baryanini#9313</a>
+          <div class ="medias-item" >
+            <a href="https://discord.com/users/baryanini" class = "medias-link medias-link-discord">baryanini#9313</a>
           </div>
         </li>
         <li class="medias-contacts-item">
           <strong class = "medias-contacts-heading" >Vk</strong>
-          <div class ="medias-item medias-item-vk" >
-            <a href="" class = "medias-link">Алексей Барьянов</a>
+          <div class ="medias-item" >
+            <a href="" class = "medias-link medias-link-vk">Алексей Барьянов</a>
           </div>
         </li>
       </ul>
@@ -70,9 +70,9 @@
       <button class="button" id = "button-change-1">Сделать фоном</button>
     </div>
     <script src = "js/script1.js"></script>
-    <div class = "workplace-child workplace-child2" id = "workplace2">
+    <div class = "workplace-child workplace-calculator" id = "workplace2">
       <form class = "calculator" name = "calc">
-        <input class = "value" type="text" name = "txt" readonly="">
+        <input class = "value" type="text"  name = "txt" readonly="" style="font-size:40px;" >
           <span class = "num clear" onclick="document.calc.txt.value =''">c</span>
           <span class = "num" onclick="document.calc.txt.value +='/'">/</span>
           <span class = "num" onclick="document.calc.txt.value +='*'">*</span>
@@ -93,7 +93,49 @@
           <span class = "num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
       </form>
     </div>
-    <script src = ""></script>
+    <div id="matrix" class="workplace-child workplace-matrix">
+      <canvas id="c"></canvas>
+    </div>
+    <script src="js/matrix.js"></script>
+    <div class = "workplace-child workplace-square" id = "">
+      <div class="move-area">
+        <div class="square" id="square"></div>
+        <div class="circle" id="circle"></div>
+      </div>
+      <div class="move-btns">
+        <div><button class="square-btn" id="squareBtnUp">Вверх</button></div>
+        <div><button class="square-btn" id="squareBtnLeft">Влево</button>
+        <button class="square-btn" id="squareBtnRight">Вправо</button></div>
+        <div><button class="square-btn" id="squareBtnDown">Вниз</button></div>
+      </div>
+      <div>
+        <span class = "circleCounter" id="circleCounter">0</span>
+      </div>
+    </div>
+    <script src="js/square.js"></script>
+    <div class = "workplace-child" id = "">
+      <canvas width="700" height="400" id="tablet"></canvas>
+      <form class="canvas-attrs">
+      <select name="strokeStyle">
+        <option value="black" selected>black</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="white">Ластик</option>
+      </select>
+      <select name="lineWidth">
+        <option value="1" selected>small</option>
+        <option value="10">medium</option>
+        <option value="20">big</option>
+      </select>
+    </form>
+    <script src="js/painter.js"></script>
+    </div>
+    <div class="workplace-child workplace-time">
+      <p class="time" id="time">
+
+      </p>
+      <script src="js/time.js"></script>
+    </div>
   </div>
 </main>
 
